@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    var http = require('http');
+    var server = http.createServer(function (req, res) {
+    var firstnumber = x = prompt('Choose Your First Number'),
+    var equation = prompt('Choose What Type of Operation You Want'),
+    var secondnumber = y = prompt('Choose Your Second Number'),
+    var x = parseInt(firstnumber),
+    var y = parseInt(equation),
+    var z = parseInt(secondnumber),
+    <button onclick="start()"><b><font color="darkgoldenrod">Click here to start your calculation</font></b></button>
+    if (equation == '+') (
+    alert(x + z)
+    );
+    if (equation == '-') (
+    alert(x - z)
+    );
+    if (equation == '*') (
+    alert(x * z)
+    );
+    if (equation == '/') (
+    alert(x / z)
+    );
+    })
+    server.listen(5000)
+    function start() {
+    var firstnumber = prompt('Choose Your First Number');
+    var equation = prompt('Choose What Type of operation You Want');
+    var secondnumber = prompt('Choose Your Second Number');
+    var x = parseInt(firstnumber);
+    var y = parseInt(equation);
+    var z = parseInt(secondnumber);
+    if (equation == '+') {
+    alert(x + z)
+    };
+    if (equation == '-') {
+    alert(x - z)
+    };
+    if (equation == '*') {
+    alert(x * z)
+    }
+    if (equation == '/') {
+    alert(x / z)
+    }
+    }
+</body>
+</html>
